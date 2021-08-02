@@ -31,10 +31,10 @@
             <a class="nav-link" href="#about">About-Us<span class="sr-only"></span>  </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="#order">Order<span class="sr-only"></span>  </a>
+            <a class="nav-link" href="#orders">Order<span class="sr-only"></span>  </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="#order">Order<span class="sr-only"></span>  </a>
+            <a class="nav-link" href="#menuitems">House Pizza<span class="sr-only"></span>  </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="#footer">Contact-Us<span class="sr-only"></span>  </a>
@@ -58,7 +58,7 @@
                 <P>THE PIZZA HEAVEN WHERE YOU CRAVE IT, <br> WE DELIVER EAT</P> <br><br><br>
                
                   
-                    <a href="#oderNow" class="btnOrder">Order Now</a>
+                    <a href="#orders" class="btnOrder">Order Now</a>
                   
                 
             </div>
@@ -93,7 +93,9 @@
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
             </p>
+            <a href="#orders">
             <input type="submit" id="order" value="PLACE ORDER &#8594">
+          </a>
 
         </div>
     </div>
@@ -103,7 +105,7 @@
    <!-- menu items -->
    
 
-   <div class="menuitems">
+   <div class="menuitems" id="menuitems">
      <h3>House Pizzas</h3>
     <div>
         <table class="carosel">
@@ -120,13 +122,13 @@
         <div class="caroselitems">
           
             <div id="food">
-                <img src="./images/dominos-pizza-serilingampally-hyderabad-pizza-outlets-iec2fy.webp" alt="" > <p>Large</p>
+               <a href="#orders"> <img src="./images/dominos-pizza-serilingampally-hyderabad-pizza-outlets-iec2fy.webp" alt="" > <p>Large</p></a>
             </div>
             <div id="food">
-                <img src="./images/pizza-hut-sojitra--anand-pizza-outlets-pizza-hut-01yzcntlyd.jpg" alt="" style="height: 602; width: 497;"> <p>Medium</p>
+               <a href="#orders"> <img src="./images/pizza-hut-sojitra--anand-pizza-outlets-pizza-hut-01yzcntlyd.jpg" alt="" style="height: 602; width: 497;"> <p>Medium</p></a>
             </div>
             <div id="food">
-                <img src="./images/PizzaHutDelivery.jpg" alt=""> <p>Small</p>
+                <a href="#orders"><img src="./images/PizzaHutDelivery.jpg" alt=""> <p>Small</p></a>
             </div>
             
 
@@ -140,7 +142,7 @@
 
 
 
-  <div class="orders" id="order">
+  <div class="orders" id="orders">
     <h1 class="text-center" id="order-pizza">Order Pizza</h1>
     <div class="form-group row">
         <div class="col-sm-2"></div>
@@ -157,36 +159,32 @@
                     <option value="mushroom">Chicken and Mushroom</option>
                     <option value="regina">Regina Pizza</option>
                 </select>
-                <label>Chose your preferred Size:</label>
+                <label>Select preferred Size:</label>
                 <select class="custom-select custom-select-md mb-3" id="size" required>
-                    <option value="regular">Regular</option>
+                    <option value="regular">Large</option>
                     <option value="medium">Medium</option>
-                    <option value="large">Large</option>
+                    <option value="large">Small</option>
                 </select>
-                <label for="crust">Choose your favorite Crust:</label>
+                <label for="crust">favorite Crust:</label>
                 <select class="custom-select custom-select-md mb-3" id="crust" required>
-                    <option value="thin">Thin Crust @ Ksh. 100</option>
-                    <option value="thick">Thick Crust @ Ksh. 150</option>
+                    <option value="thin">Glutten free @ Ksh. 230</option>
+                    <option value="thick">Thin Crust @ Ksh. 200</option>
                     <option value="flatbread">FlatBread Crust @ sh. 180</option>
                     <option value="custom">Custom Crust @ sh. 280</option>
                 </select>
                 <label>Select Your favourite Toppings</label>
                 <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                    <option value="tomato">Tomato @ sh. 80</option>
-                    <option value="onions">Onions @ sh. 80</option>
-                    <option value="mushroom">Mushroom @ sh. 80</option>
-                    <option value="greenpepper">Green Pepper @ sh. 80</option>
+                   
+                    <option value="olives">Olives @ sh. 230</option>
+                    <option value="pineapple">Pineapple @ sh. 220</option>
+                    <option value="sweetcorn">Sweet Corn @ sh. 220</option>
+                    <option value="macon">Macon @ sh. 220</option>
+                    <option value="mince">Mince @ sh. 220</option>
                     <option value=""></option>
-                    <option value="olives">Olives @ sh. 120</option>
-                    <option value="pineapple">Pineapple @ sh. 120</option>
-                    <option value="sweetcorn">Sweet Corn @ sh. 120</option>
-                    <option value="macon">Macon @ sh. 120</option>
-                    <option value="mince">Mince @ sh. 120</option>
-                    <option value=""></option>
-                    <option value="beef">Beef Peperoni @ sh. 170</option>
-                    <option value="chicken">Periperi Chicken @ sh. 170</option>
+                    <option value="beef">Beef Peperoni @ sh. 370</option>
+                    <option value="chicken">Periperi Chicken @ sh. 370</option>
                 </select>
-                <label for="number">Number of Pizza's</label>
+                <!-- <label for="number">Number of Pizza's</label> -->
                 <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
 
 
@@ -203,11 +201,14 @@
     </div>
 </div>
 
+
 <div class="order-summary" id="sum-order">
     <h1 class="text-center" id="summary">Confirm Order</h1>
     <h2 class="text-center summary">YOur order is as below</h2>
     <ol id="list" class="text-center sum">
     </ol>
+
+    
 
 
 
