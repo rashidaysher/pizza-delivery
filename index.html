@@ -257,56 +257,116 @@
 
         <div class="form-row">
             <div class="col form-group">
-                <label>First name </label>   
-                    <input type="text" class="form-control" placeholder="">
+                <label for="select">Choose flavour </label>   
+				<select class="browser-default custom-select custom-select-md mb-3 name">
+					<!-- <option selected value="choose">Choose your flavor</option> -->
+					<option value="Chicken Tikka">Chicken Tikka</option>
+					<option value="PeriPeri Pizza">PeriPeri Pizza</option>
+					<option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+					<option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+					<option value="Sunchoke Pizza">Sunchoke Pizza</option>
+					<option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+				  </select>
             </div> <!-- form-group end.// -->
             <div class="col form-group">
-                <label>Last name</label>
-                    <input type="text" class="form-control" placeholder=" ">
+                <label for="select"> Select Size</label>
+				<select class="browser-default custom-select custom-select-md mb-3" id="size">
+					<option selected value="0">Pick size</option>
+					<option value="large">Large -- sh. 1400</option>
+					<option value="medium">Medium -- sh. 950</option>
+					<option value="small">Small -- sh. 600</option>
+				  </select>
             </div> <!-- form-group end.// -->
         </div> <!-- form-row end.// -->
         <div class="form-group">
-            <label>Email address</label>
-            <input type="email" class="form-control" placeholder="">
-            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label>Select Topping</label>
+			<select class="custom-select custom-select-md mb-3" id="toppings" required>
+				<option value="tomato">Mince @ sh. 80</option>
+				<option value="onions">Onions @ sh. 80</option>
+				<option value="mushroom">Olives@ sh. 80</option>
+				<option value="greenpepper">Green Pepper @ sh. 80</option>
+				<option value=""></option>
+				<option value=""></option>
+				<option value="beef">Beef Peperoni @ sh. 170</option>
+				<option value="chicken">Periperi Chicken @ sh. 170</option>
+			</select>
+            <small class="form-text text-muted">Your order will be delivered straight to your address</small>
         </div> <!-- form-group end.// -->
         <div class="form-group">
                 <label class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="gender" value="option1">
-                <span class="form-check-label"> Organic Crops </span>
+                <span class="form-check-label"> Delivery </span>
             </label>
             <label class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="gender" value="option2">
-                <span class="form-check-label"> Inorganic crops</span>
+                <span class="form-check-label"> Pick Up</span>
             </label>
         </div> <!-- form-group end.// -->
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label>Vegetable Growm</label>
-                <input type="text" class="form-control">
-            </div> <!-- form-group end.// -->
-        </div> <!-- form-row.// -->
+         
         <div class="form-group">
-            <label>Create password</label>
-            <input class="form-control" type="password">
-        </div> <!-- form-group end.// -->  
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block"> Sign Up </button>
+            <button type="submit" class="btn btn-primary btn-block"> Ckeckout </button>
         </div> <!-- form-group// -->      
-        <small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>                                          
+        <small class="text-muted">By clicking the 'Order' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>                                          
     </form>
     </article> <!-- card-body end .// -->
-    <div class="border-top card-body text-center">Have an account? <a href="login.html">Log In</a></div>
-    </div> <!-- card.// -->
-    </div> <!-- col.//-->
+    
+    </div> 
+	<div class="col-sm-7">
+		<div id="information">
+		  <p>Your order will be processed and delivered within one hour of placing.</p>
+		  <p>Make sure you have the total amout for the order during order delivery delivery.</p>
+		  <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+		  <p id="regards">Regards, Management</p>
+		</div>
+		<div class="choise">
+		  <h2>Your Order is:</h2>
+		  <div id="your-orders">
+			<table class="table table-sm  pizzatable">
+			  <thead>
+				<tr>
+				  <th scope="col">Name</th>
+				  <th scope="col">Size</th>
+				  <th scope="col">Crust</th>
+				  <th scope="col">Topping</th>
+				  <th scope="col">Total</th>
+				</tr>
+			  </thead>
+			  <tbody id="ordersmade">
+				<tr>
+				  <td id="pizzaname"></td>
+				  <td id="pizzasize"></td>
+				  <td id="pizzacrust"></td>
+				  <td id="pizzatopping"></td>
+				  <td id="totals"></td>
+				</tr>                  
+			  </tbody>
+			</table>
+			<p id="pizzatotal"></p>
+			<p id="totalbill"></p> 
+			<p id="addedprice">Delivery will cost sh. 150</p>
+			<p id="finallmessage"></p>
+		  </div>
+		  <button class="btn btn-orange addPizza">Add Pizza</button>
+		  <button class="btn btn-orange" id="checkout">Checkout</button>
+		  <button class="btn btn-orange deliver">Home delivery?</button>
+		</div>
+		<div class="delivery">
+			<form action="">
+			  <div class="form-group">
+				<input type="text" id="name" class="form-control mb-3" placeholder="Name">
+				<input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+				<input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+				<button class="btn btn-orange" id="final-order">Place Order</button>
+			  </div>
+			</form>
+		</div>
+	  </div>
+    </div> 
     
     </div> <!-- row.//-->
     
     
     </div> 
-    <!--container end.//-->
-<!-- main content -->
-
 
    <div class="footer">
 <div class="container-fluid4">
