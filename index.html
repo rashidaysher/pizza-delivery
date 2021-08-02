@@ -137,12 +137,234 @@
 
 
 
+  <div class="container-fluid order" id="orderNow">
+    <div class="order-overlay">
+      <div class="controls-top text-center" id="Order-now"> 
+        <h2>Order Here</h2>
+      </div>
+      <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+      <div class="row">
+          <div class="col-sm-5">
+            <form action="">
+                <label for="select">Select Your Flavor</label>
+                <select class="browser-default custom-select custom-select-md mb-3 name">
+                  <!-- <option selected value="choose">Choose your flavor</option> -->
+                  <option value="Chicken Tikka">Chicken Tikka</option>
+                  <option value="PeriPeri Pizza">PeriPeri Pizza</option>
+                  <option value="Raspberry Dessert Pizza">Raspberry Dessert Pizza</option>
+                  <option value="Chicken Alfredo Pizza">Chicken Alfredo Pizza</option>
+                  <option value="Sunchoke Pizza">Sunchoke Pizza</option>
+                  <option value="Buffalo Chicken Sticks">Buffalo Chicken Sticks</option>
+                </select>
+              <label for="select">Your Size</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                <option selected value="0">Pick size</option>
+                <option value="large">Large -- sh. 1400</option>
+                <option value="medium">Medium -- sh. 950</option>
+                <option value="small">Small -- sh. 600</option>
+              </select>
+              <label>Select Your favourite Toppings</label>
+                <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                    <option value="tomato">Tomato @ sh. 80</option>
+                    <option value="onions">Onions @ sh. 80</option>
+                    <option value="mushroom">Mushroom @ sh. 80</option>
+                    <option value="greenpepper">Green Pepper @ sh. 80</option>
+                    <option value=""></option>
+                    <option value="olives">Olives @ sh. 120</option>
+                    <option value="pineapple">Pineapple @ sh. 120</option>
+                    <option value="sweetcorn">Sweet Corn @ sh. 120</option>
+                    <option value="macon">Macon @ sh. 120</option>
+                    <option value="mince">Mince @ sh. 120</option>
+                    <option value=""></option>
+                    <option value="beef">Beef Peperoni @ sh. 170</option>
+                    <option value="chicken">Periperi Chicken @ sh. 170</option>
+                </select>
+                <label for="number">Number of Pizza's</label>
+                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+            </form>
+          </div>
+          <div class="col-sm-7">
+            <div id="information">
+              <p>Your order will be processed and delivered within one hour of placing.</p>
+              <p>Make sure you have the total amout for the order during order delivery delivery.</p>
+              <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+              <p id="regards">Regards, Management</p>
+            </div>
+            <div class="choise">
+              <h2>Your Order is:</h2>
+              <div id="your-orders">
+                <table class="table table-sm  pizzatable">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Size</th>
+                      <th scope="col">Crust</th>
+                      <th scope="col">Topping</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ordersmade">
+                    <tr>
+                      <td id="pizzaname"></td>
+                      <td id="pizzasize"></td>
+                      <td id="pizzacrust"></td>
+                      <td id="pizzatopping"></td>
+                      <td id="totals"></td>
+                    </tr>                  
+                  </tbody>
+                </table>
+                <p id="pizzatotal"></p>
+                <p id="totalbill"></p> 
+                <p id="addedprice">Delivery will cost sh. 150</p>
+                <p id="finallmessage"></p>
+              </div>
+              <button class="btn btn-orange addPizza">Add Pizza</button>
+              <button class="btn btn-orange" id="checkout">Checkout</button>
+              <button class="btn btn-orange deliver">Home delivery?</button>
+            </div>
+            <div class="delivery">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                    <button class="btn btn-orange" id="final-order">Place Order</button>
+                  </div>
+                </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
 
 
+
+
+  <div class="container-fluid m4">
+    <div class="row justify-content-center">
+    <div class="col-md-6">
+    <div class="card">
+    <header class="card-header">
+        <p>Create an account with us to become a farmer</p>
+    </header>
+    <article class="card-body">
+
+    <form>
+
+        <div class="form-row">
+            <div class="col form-group">
+                <label>First name </label>   
+                    <input type="text" class="form-control" placeholder="">
+            </div> <!-- form-group end.// -->
+            <div class="col form-group">
+                <label>Last name</label>
+                    <input type="text" class="form-control" placeholder=" ">
+            </div> <!-- form-group end.// -->
+        </div> <!-- form-row end.// -->
+        <div class="form-group">
+            <label>Email address</label>
+            <input type="email" class="form-control" placeholder="">
+            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div> <!-- form-group end.// -->
+        <div class="form-group">
+                <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" value="option1">
+                <span class="form-check-label"> Organic Crops </span>
+            </label>
+            <label class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" value="option2">
+                <span class="form-check-label"> Inorganic crops</span>
+            </label>
+        </div> <!-- form-group end.// -->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Vegetable Growm</label>
+                <input type="text" class="form-control">
+            </div> <!-- form-group end.// -->
+        </div> <!-- form-row.// -->
+        <div class="form-group">
+            <label>Create password</label>
+            <input class="form-control" type="password">
+        </div> <!-- form-group end.// -->  
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block"> Sign Up </button>
+        </div> <!-- form-group// -->      
+        <small class="text-muted">By clicking the 'Sign Up' button, you confirm that you accept our <br> Terms of use and Privacy Policy.</small>                                          
+    </form>
+    </article> <!-- card-body end .// -->
+    <div class="border-top card-body text-center">Have an account? <a href="login.html">Log In</a></div>
+    </div> <!-- card.// -->
+    </div> <!-- col.//-->
+    
+    </div> <!-- row.//-->
+    
+    
+    </div> 
+    <!--container end.//-->
+<!-- main content -->
+
+
+   <div class="footer">
+<div class="container-fluid4">
+<div class="row">
+
+<div class="col-md-3">
+<h1>contacts</h1>
+<p>0729037218 0799250449 mymboga@gmail.com</p>
+</div>
+
+
+<div class="col-md-3">
+
+<h1>find us on</h1>
+<p>
+<ul>
+                <li><a href="#twitter">twitter</a></li>
+                 <li><a href="#facebook">Face Book</a></li>
+                <li><a href="#dribble">Dribble</a></li>
+                <li><a href="#instagram">Instagram</a></li>
+                <li><a href="#linkedin">Linkedin</a></li>
+            </ul>
+            </p>
+</div>
+
+
+<div class="col-md-3">
+<h1>Quick Links</h1>
+             <p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                 <li><a href="About.html">About</a></li>
+                <li><a href="Shopping.html">Products</a></li>
+                <li><a href="cont.html">Contacts</a></li>
+                <li><a href="form.html">Become-A-Farmer</a></li>
+            </ul>
+            </p>
+          </div>
+
+
+<div class="col-md-3">
+<h1>Newsletter</h1>
+            <p1>Sign up for our weekley news letter</p1>
+            <p>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                  </span>
+                </div><!-- /input-group -->
+             </p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Footer -->
 
 
 
