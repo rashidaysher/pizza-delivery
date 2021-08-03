@@ -15,8 +15,9 @@
 <body>
     
   <!-- navigation section -->
+  
 <div class="container">
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg bg-light">
     <a class="navbar-brand" href="index.html"><img src="" alt=""> </a>
       <button class="navbar-toggler" >
         <span class="navbar-toggler-icon"></span>
@@ -122,13 +123,13 @@
         <div class="caroselitems">
           
             <div id="food">
-               <a href="#orders"> <img src="./images/dominos-pizza-serilingampally-hyderabad-pizza-outlets-iec2fy.webp" alt="" > <p>Large</p></a>
+               <a href="#orders"> <img src="./images/dominos-pizza-serilingampally-hyderabad-pizza-outlets-iec2fy.webp" alt="" > <p>Large @1200</p></a>
             </div>
             <div id="food">
-               <a href="#orders"> <img src="./images/pizza-hut-sojitra--anand-pizza-outlets-pizza-hut-01yzcntlyd.jpg" alt="" style="height: 602; width: 497;"> <p>Medium</p></a>
+               <a href="#orders"> <img src="./images/pizza-hut-sojitra--anand-pizza-outlets-pizza-hut-01yzcntlyd.jpg" alt="" > <p>Medium @600</p></a>
             </div>
             <div id="food">
-                <a href="#orders"><img src="./images/PizzaHutDelivery.jpg" alt=""> <p>Small</p></a>
+                <a href="#orders"><img src="./images/PizzaHutDelivery.jpg" alt=""> <p>Small @300</p></a>
             </div>
             
 
@@ -141,77 +142,58 @@
   <!-- the form section -->
 
 
-
-  <div class="orders" id="orders">
-    <h1 class="text-center" id="order-pizza">Order Pizza</h1>
-    <div class="form-group row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8 order-overlay text-center">
-            <form class="col-sm-6 offset-sm-3 text-center">
-                <label>Pick your pizza Flavour:</label>
-                <select class="custom-select custom-select-md mb-3 flavour" required>
-                    <option value="veg">Veg Tikka</option>
-                    <option value="tikka">Chicken Tikka</option>
-                    <option value="pP">Peri-Peri Chicken</option>
-                    <option value="bbq">BBQ Steak</option>
-                    <option value="boerewors">Boerewors</option>
-                    <option value="hawaiian">Hawaiian</option>
-                    <option value="mushroom">Chicken and Mushroom</option>
-                    <option value="regina">Regina Pizza</option>
-                </select>
-                <label>Select preferred Size:</label>
-                <select class="custom-select custom-select-md mb-3" id="size" required>
-                    <option value="regular">Large</option>
-                    <option value="medium">Medium</option>
-                    <option value="large">Small</option>
-                </select>
-                <label for="crust">favorite Crust:</label>
-                <select class="custom-select custom-select-md mb-3" id="crust" required>
-                    <option value="free">Glutten free @ Ksh. 230</option>
-                    <option value="thin">Thin Crust @ Ksh. 200</option>
-                    <option value="flatbread">FlatBread Crust @ sh. 180</option>
-                    <option value="thick">Thick Crust @ sh. 280</option>
-                </select>
-                <label>Select Your favourite Toppings</label>
-                <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                   
-                    <option value="olives">Olives @ sh. 230</option>
-                    <option value="pineapple">Pineapple @ sh. 220</option>
-                    <option value="sweetcorn">Sweet Corn @ sh. 220</option>
-                    <option value="macon">Macon @ sh. 220</option>
-                    <option value="mince">Mince @ sh. 220</option>
-                    <option value=""></option>
-                    <option value="beef">Beef Peperoni @ sh. 370</option>
-                    <option value="chicken">Periperi Chicken @ sh. 370</option>
-                </select>
-                <!-- <label for="number">Number of Pizza's</label> -->
-                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
-
-
-
-            </form>
-            <a href="#summary">
-                <button type="submit" class="btn btn-success checkout" id="checkout">
-                    Checkout
-                </button>
-            </a>
-
-        </div>
-        <div class="col-sm-2"></div>
-    </div>
+<div class="container2">
+  <div class="jumbotron" id="orders">
+    <h1>Order</h1>
+    <form class="text-center" id="text-center">
+      <label>pizza Flavor</label><br>
+      <select class="flavors" id="flavor" required><br>
+        <option label="chicken tikka @800" value="800">Chiken tikka @800</option>
+        <option label="Taco Quesadila @1200" value="1200">Taco Quesadila Pizza</option>
+        <option label="Mushrooms @350" value="350">Mushrooms</option>
+        <option label="Macaroni And Cheese @700" value="700">Macaroni And Cheese Pizza</option>
+        <option label="Beef pizza @500" value="500">Beef pizza</option>
+        <option label="Sausage pizza @650" value="650">Sausage pizza</option>
+      </select><br>
+      <br><label>pizza Size</label><br>
+      <select class="sizes" id="size" required><br>
+  <option label="small @300" value="300">small</option>
+  <option label="Medium @600" value="600">Medium</option>
+  <option label="Large @1200" value="1200">Large</option>
+</select><br>
+<br><label>pizza Crust</label><br>
+<select class="crust" id="crust" required><br>
+  <option label="Thin Crust @150" value="150">Thin Crust @150</option>
+  <option label="Thick Crust @200" value="200">Thick Crust</option>
+  <option label="Deep Crust @380" value="380">Deep Crust</option>
+  <option label="Cheese Filled Crust @500" value="500">Cheese Filled Crust</option>
+  <option label="Stuffed Crust @345" value="345">Stuffed Crust</option>
+</select><br>
+<br><label>pizza Topping</label><br>
+<select class="toppings " id="topping" required><br>
+  <option label="Pepperoni @100" value="100">Pepperoni </option>
+  <option label="Mushrooms @300" value="300">Mushrooms</option>
+  <option label="Onions @120" value="120">Onions</option>
+  <option label="Sausage @124" value="124">Sausage</option>
+  <option label="Green peppers @80" value="80">Green peppers</option>
+</select><br>
+<br><label>Quantity of pizza</label><br>
+<input value="" required placeholder="number of pizza" id="quantity"></input><br>
+<div class="button">
+  <br><br><button type="submit" id="btn" 
+  
+  label="">submit</button>
+</div>
+</form>
+</div>
 </div>
 
 
-<div class="order-summary" id="sum-order">
-    <h1 class="text-center" id="summary">Confirm Order</h1>
-    <h2 class="text-center summary">YOur order is as below</h2>
-    <ol id="list" class="text-center sum">
-    </ol>
-
-    
 
 
 
+
+<!-- footer section starts here -->
 
    <div class="footer" id="footer">
 <div class="container-fluid4">
@@ -261,7 +243,7 @@
                   <span class="input-group-btn">
                     <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
                   </span>
-                </div><!-- /input-group -->
+                </div>
              </p>
 </div>
 
