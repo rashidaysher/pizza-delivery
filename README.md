@@ -21,7 +21,7 @@
 
 ## CONTACT INFORMATION
 #### email adress: rashidaisha.ara@gmail.com
-#### project link 
+#### project link : https://rashidaysher.github.io/pizza-delivery/
 
 
 
